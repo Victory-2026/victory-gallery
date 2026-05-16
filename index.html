@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victory Group - Video Gallery</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f0f0f;
+      color:white;
+    }
+
+    header{
+      background:linear-gradient(135deg,#111,#1f1f1f);
+      padding:30px 20px;
+      text-align:center;
+      border-bottom:2px solid #ff0000;
+    }
+
+    header h1{
+      font-size:42px;
+      color:#ff0000;
+      margin-bottom:10px;
+    }
+
+    header p{
+      color:#ccc;
+      font-size:16px;
+    }
+
+    .youtube-btn{
+      display:inline-block;
+      margin-top:20px;
+      background:#ff0000;
+      color:white;
+      text-decoration:none;
+      padding:12px 24px;
+      border-radius:40px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .youtube-btn:hover{
+      background:white;
+      color:#ff0000;
+    }
+
+    /* CHANNEL BUTTONS */
+
+    .channel-list{
+      margin-top:25px;
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .channel-name{
+      text-decoration:none;
+      color:white;
+      background:linear-gradient(45deg,#ff0000,#ff4d4d);
+      padding:12px 22px;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+      box-shadow:0 4px 10px rgba(255,0,0,0.4);
+    }
+
+    .channel-name:hover{
+      transform:scale(1.08);
+      background:linear-gradient(45deg,#ffffff,#ffcccc);
+      color:#000;
+    }
+
+    /* VIDEO GALLERY */
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:25px;
+      padding:40px 20px;
+    }
+
+    .video-card{
+      background:#1b1b1b;
+      border-radius:18px;
+      overflow:hidden;
+      text-decoration:none;
+      color:white;
+      box-shadow:0 4px 12px rgba(0,0,0,0.4);
+      transition:transform 0.3s ease;
+    }
+
+    .video-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .video-card img{
+      width:100%;
+      display:block;
+    }
+
+    .video-content{
+      padding:18px;
+    }
+
+    .video-content h3{
+      color:#fff;
+      margin-bottom:10px;
+      font-size:18px;
+    }
+
+    .video-content p{
+      color:#bbb;
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    footer{
+      background:#111;
+      text-align:center;
+      padding:25px;
+      color:#888;
+      margin-top:20px;
+      border-top:1px solid #222;
+    }
+
+    @media(max-width:768px){
+
+      header h1{
+        font-size:30px;
+      }
+
+      .channel-list{
+        flex-direction:column;
+        align-items:center;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>Victory Group</h1>
+
+    <p>Official YouTube & Video Gallery</p>
+
+    <a href="https://youtube.com/@victorygroup26?sub_confirmation=1"
+       target="_blank"
+       class="youtube-btn">
+
+       Subscribe on YouTube
+
+    </a>
+
+    <!-- CHANNELS -->
+
+    <div class="channel-list">
+
+      <a href="https://www.youtube.com/@kumareshtalks"
+         target="_blank"
+         class="channel-name">
+
+         🎤 KUMARESH TALKS
+
+      </a>
+
+      <a href="https://www.youtube.com/@victorygroup26"
+         target="_blank"
+         class="channel-name">
+
+         ▶️ VICTORY GROUP
+
+      </a>
+
+      <a href="https://www.youtube.com/@VictoryDeco-u"
+         target="_blank"
+         class="channel-name">
+
+         🎉 VICTORY DECO
+
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- VIDEO SECTION -->
+
+  <section class="gallery">
+
+    <!-- VIDEO 1 -->
+
+    <a class="video-card"
+       href="https://www.youtube.com/watch?v=ANaBCyHT8-M"
+       target="_blank">
+
+      <img src="https://img.youtube.com/vi/ANaBCyHT8-M/hqdefault.jpg"
+           alt="Wedding Decoration Video">
+
+      <div class="video-content">
+
+        <h3>Wedding Decoration Highlights</h3>
+
+        <p>
+          Luxury wedding decoration setup with elegant floral designs and lighting concepts.
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- VIDEO 2 -->
+
+    <a class="video-card"
+       href="https://www.youtube.com/watch?v=p3MYGeRlIG0"
+       target="_blank">
+
+      <img src="https://img.youtube.com/vi/p3MYGeRlIG0/hqdefault.jpg"
+           alt="Cooking Show">
+
+      <div class="video-content">
+
+        <h3>Cooking Show Episode</h3>
+
+        <p>
+          Traditional Tamil cooking recipes and delicious homemade food preparation videos.
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- VIDEO 3 -->
+
+    <a class="video-card"
+       href="https://www.youtube.com/watch?v=rK2c7AoBgWM"
+       target="_blank">
+
+      <img src="https://img.youtube.com/vi/rK2c7AoBgWM/hqdefault.jpg"
+           alt="Entertainment Show">
+
+      <div class="video-content">
+
+        <h3>Entertainment Show</h3>
+
+        <p>
+          Exclusive interviews, stage performances, and trending Tamil entertainment content.
+        </p>
+
+      </div>
+
+    </a>
+
+    <!-- VIDEO 4 -->
+
+    <a class="video-card"
+       href="https://www.youtube.com/watch?v=YO5vKw82vww"
+       target="_blank">
+
+      <img src="https://img.youtube.com/vi/YO5vKw82vww/hqdefault.jpg"
+           alt="Film Productions">
+
+      <div class="video-content">
+
+        <h3>Film and Productions</h3>
+
+        <p>
+          Creative film productions, advertisements and cinematic visual content.
+        </p>
+
+      </div>
+
+    </a>
+  <!-- VIDEO 5 -->
+
+    <a class="video-card"
+       href="https://www.youtube.com/watch?v=dwBY43u7vI0"
+       target="_blank">
+
+      <img src="https://img.youtube.com/vi/dwBY43u7vI0/hqdefault.jpg"
+           alt="Entertainment Show">
+
+      <div class="video-content">
+
+        <h3>Events</h3>
+
+        <p>
+          Exclusive interviews, stage performances, and trending Tamil entertainment content.
+        </p>
+
+      </div>
+
+    </a>
+
+
+  </section>
+
+  <footer>
+
+    © 2026 Victory Group | All Rights Reserved
+
+  </footer>
+
+</body>
+</html>
